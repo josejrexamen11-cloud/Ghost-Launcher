@@ -297,7 +297,7 @@ fun MinecraftSkinsScreen(
                     } else {
                         "Waving Cape Physics • Drag 360°"
                     },
-                    color = Color(0xFF55FF55),
+                    color = Color(0xFFFFFFFF),
                     fontFamily = MinecraftFontFamily,
                     fontSize = 9.5.sp
                 )
@@ -325,7 +325,7 @@ fun MinecraftSkinsScreen(
                         .border(
                             BorderStroke(
                                 1.5.dp,
-                                if (selectedWardrobeTab == 0) Color(0xFF55FF55) else Color(0xFF383838)
+                                if (selectedWardrobeTab == 0) Color(0xFFFFFFFF) else Color(0xFF383838)
                             ),
                             RoundedCornerShape(3.dp)
                         )
@@ -338,7 +338,7 @@ fun MinecraftSkinsScreen(
                 ) {
                     Text(
                         text = "SKINS",
-                        color = if (selectedWardrobeTab == 0) Color(0xFF55FF55) else Color.White,
+                        color = if (selectedWardrobeTab == 0) Color(0xFFFFFFFF) else Color.White,
                         fontFamily = MinecraftFontFamily,
                         fontWeight = FontWeight.Bold,
                         fontSize = 12.sp
@@ -354,7 +354,7 @@ fun MinecraftSkinsScreen(
                         .border(
                             BorderStroke(
                                 1.5.dp,
-                                if (selectedWardrobeTab == 1) Color(0xFF55FF55) else Color(0xFF383838)
+                                if (selectedWardrobeTab == 1) Color(0xFFFFFFFF) else Color(0xFF383838)
                             ),
                             RoundedCornerShape(3.dp)
                         )
@@ -367,7 +367,7 @@ fun MinecraftSkinsScreen(
                 ) {
                     Text(
                         text = "CAPES",
-                        color = if (selectedWardrobeTab == 1) Color(0xFF55FF55) else Color.White,
+                        color = if (selectedWardrobeTab == 1) Color(0xFFFFFFFF) else Color.White,
                         fontFamily = MinecraftFontFamily,
                         fontWeight = FontWeight.Bold,
                         fontSize = 12.sp
@@ -398,7 +398,7 @@ fun MinecraftSkinsScreen(
                             .border(
                                 BorderStroke(
                                     1.5.dp,
-                                    if (!isSlimModel) Color(0xFF55FF55) else Color(0xFF383838)
+                                    if (!isSlimModel) Color(0xFFFFFFFF) else Color(0xFF383838)
                                 ),
                                 RoundedCornerShape(3.dp)
                             )
@@ -431,7 +431,7 @@ fun MinecraftSkinsScreen(
                             .border(
                                 BorderStroke(
                                     1.5.dp,
-                                    if (isSlimModel) Color(0xFF55FF55) else Color(0xFF383838)
+                                    if (isSlimModel) Color(0xFFFFFFFF) else Color(0xFF383838)
                                 ),
                                 RoundedCornerShape(3.dp)
                             )
@@ -497,7 +497,7 @@ fun MinecraftSkinsScreen(
                                 .border(
                                     BorderStroke(
                                         1.5.dp,
-                                        if (isSelected) Color(0xFF55FF55)
+                                        if (isSelected) Color(0xFFFFFFFF)
                                         else Color(0xFF383838)
                                     ),
                                     RoundedCornerShape(3.dp)
@@ -547,7 +547,7 @@ fun MinecraftSkinsScreen(
                                 Spacer(modifier = Modifier.height(4.dp))
                                 Text(
                                     text = if (isCurrentSkin) "CURRENT" else label,
-                                    color = if (isSelected) Color(0xFF55FF55) else Color.White,
+                                    color = if (isSelected) Color(0xFFFFFFFF) else Color.White,
                                     fontFamily = MinecraftFontFamily,
                                     fontSize = 10.sp,
                                     fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal
@@ -555,7 +555,7 @@ fun MinecraftSkinsScreen(
                                 if (isSelected) {
                                     Text(
                                         text = "ACTIVE",
-                                        color = Color(0xFF55FF55),
+                                        color = Color(0xFFFFFFFF),
                                         fontFamily = MinecraftFontFamily,
                                         fontSize = 8.sp,
                                         fontWeight = FontWeight.Bold
@@ -627,7 +627,7 @@ fun MinecraftSkinsScreen(
                                 .border(
                                     BorderStroke(
                                         1.5.dp,
-                                        if (isSelected) Color(0xFF55FF55)
+                                        if (isSelected) Color(0xFFFFFFFF)
                                         else Color(0xFF383838)
                                     ),
                                     RoundedCornerShape(3.dp)
@@ -670,7 +670,7 @@ fun MinecraftSkinsScreen(
 
                                 Text(
                                     text = preset.name,
-                                    color = if (isSelected) Color(0xFF55FF55) else Color.White,
+                                    color = if (isSelected) Color(0xFFFFFFFF) else Color.White,
                                     fontFamily = MinecraftFontFamily,
                                     fontSize = 9.5.sp,
                                     fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
@@ -680,7 +680,7 @@ fun MinecraftSkinsScreen(
                                 if (isSelected) {
                                     Text(
                                         text = "ACTIVE",
-                                        color = Color(0xFF55FF55),
+                                        color = Color(0xFFFFFFFF),
                                         fontFamily = MinecraftFontFamily,
                                         fontSize = 8.sp,
                                         fontWeight = FontWeight.Bold

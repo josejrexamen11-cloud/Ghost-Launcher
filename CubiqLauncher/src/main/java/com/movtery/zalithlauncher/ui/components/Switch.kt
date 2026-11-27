@@ -45,7 +45,7 @@ fun DefaultSwitch(
     colors: SwitchColors = SwitchDefaults.colors(
         checkedThumbColor = Color.White,
         checkedTrackColor = Color(0xFF2E8540),
-        checkedBorderColor = Color(0xFF388E3C),
+        checkedBorderColor = Color(0xFF9E9E9E),
         checkedIconColor = Color(0xFF1B5E20),
         uncheckedThumbColor = Color(0xFFAAAAAA),
         uncheckedTrackColor = Color(0xFF26262B),

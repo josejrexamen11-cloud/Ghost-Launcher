@@ -608,6 +608,55 @@ val CubiqShapes = androidx.compose.material3.Shapes(
     extraLarge = androidx.compose.foundation.shape.RoundedCornerShape(3.dp)
 )
 
+// Black-and-white scheme. The launcher always uses this regardless of color settings.
+private val monochromeDark = darkColorScheme(
+    primary = Color(0xFFFFFFFF),
+    onPrimary = Color(0xFF000000),
+    primaryContainer = Color(0xFF2A2A2A),
+    onPrimaryContainer = Color(0xFFFFFFFF),
+    secondary = Color(0xFFBDBDBD),
+    onSecondary = Color(0xFF000000),
+    secondaryContainer = Color(0xFF1F1F1F),
+    onSecondaryContainer = Color(0xFFE6E6E6),
+    tertiary = Color(0xFFE0E0E0),
+    onTertiary = Color(0xFF000000),
+    background = Color(0xFF000000),
+    onBackground = Color(0xFFF5F5F5),
+    surface = Color(0xFF0A0A0A),
+    onSurface = Color(0xFFF5F5F5),
+    surfaceVariant = Color(0xFF1A1A1A),
+    onSurfaceVariant = Color(0xFFC8C8C8),
+    outline = Color(0xFF6E6E6E),
+    outlineVariant = Color(0xFF3A3A3A),
+    error = Color(0xFFFFB4AB),
+    onError = Color(0xFF690005),
+    errorContainer = Color(0xFF93000A),
+    onErrorContainer = Color(0xFFFFDAD6)
+)
+
+private val monochromeLight = lightColorScheme(
+    primary = Color(0xFF000000),
+    onPrimary = Color(0xFFFFFFFF),
+    primaryContainer = Color(0xFFE0E0E0),
+    onPrimaryContainer = Color(0xFF000000),
+    secondary = Color(0xFF444444),
+    onSecondary = Color(0xFFFFFFFF),
+    secondaryContainer = Color(0xFFEEEEEE),
+    onSecondaryContainer = Color(0xFF111111),
+    tertiary = Color(0xFF333333),
+    onTertiary = Color(0xFFFFFFFF),
+    background = Color(0xFFFFFFFF),
+    onBackground = Color(0xFF111111),
+    surface = Color(0xFFFFFFFF),
+    onSurface = Color(0xFF111111),
+    surfaceVariant = Color(0xFFEEEEEE),
+    onSurfaceVariant = Color(0xFF333333),
+    outline = Color(0xFF888888),
+    outlineVariant = Color(0xFFCCCCCC),
+    error = Color(0xFFBA1A1A),
+    onError = Color(0xFFFFFFFF)
+)
+
 @Composable
 fun ZalithLauncherTheme(
     darkTheme: Boolean = isLauncherInDarkTheme(),
@@ -624,42 +673,8 @@ fun ZalithLauncherTheme(
 
     val context = LocalContext.current
 
-    val targetColorScheme = remember(darkTheme, dynamicColor, colorTheme, customColor, customPaletteStyle) {
-        when {
-            dynamicColor && colorTheme == ColorThemeType.DYNAMIC && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
-                if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
-            }
-
-            darkTheme -> when (colorTheme) {
-                ColorThemeType.EMBERMIRE -> verdantFieldDark
-                ColorThemeType.VELVET_ROSE -> velvetRoseDark
-                ColorThemeType.MISTWAVE -> mistwaveDark
-                ColorThemeType.GLACIER -> glacierDark
-                ColorThemeType.VERDANTFIELD -> verdantFieldDark
-                ColorThemeType.URBAN_ASH -> urbanAshDark
-                ColorThemeType.VERDANT_DAWN -> verdantDawnDark
-                ColorThemeType.CUSTOM -> customDark(
-                    color = customColor,
-                    style = customPaletteStyle
-                )
-                else -> verdantFieldDark
-            }
-
-            else -> when (colorTheme) {
-                ColorThemeType.EMBERMIRE -> verdantFieldLight
-                ColorThemeType.VELVET_ROSE -> velvetRoseLight
-                ColorThemeType.MISTWAVE -> mistwaveLight
-                ColorThemeType.GLACIER -> glacierLight
-                ColorThemeType.VERDANTFIELD -> verdantFieldLight
-                ColorThemeType.URBAN_ASH -> urbanAshLight
-                ColorThemeType.VERDANT_DAWN -> verdantDawnLight
-                ColorThemeType.CUSTOM -> customLight(
-                    color = customColor,
-                    style = customPaletteStyle
-                )
-                else -> verdantFieldLight
-            }
-        }
+    val targetColorScheme = remember(darkTheme) {
+        if (darkTheme) monochromeDark else monochromeLight
     }
 
     var currentDarkTheme by remember { mutableStateOf(darkTheme) }

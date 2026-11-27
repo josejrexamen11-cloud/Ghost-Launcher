@@ -822,7 +822,7 @@ private fun TaskItem(
                 ) {
                     Text(
                         text = "EXECUTING: ",
-                        color = Color(0xFF55FF55),
+                        color = Color(0xFFFFFFFF),
                         fontFamily = MinecraftFontFamily,
                         fontWeight = FontWeight.Bold,
                         fontSize = 11.sp
@@ -869,7 +869,7 @@ private fun TaskItem(
                         )
                         Text(
                             text = if (taskProgress >= 0f) "${(taskProgress * 100).toInt()}%" else "Working...",
-                            color = Color(0xFF55FF55),
+                            color = Color(0xFFFFFFFF),
                             fontFamily = MinecraftFontFamily,
                             fontWeight = FontWeight.Bold,
                             fontSize = 9.5.sp
@@ -881,7 +881,7 @@ private fun TaskItem(
                                 .fillMaxWidth()
                                 .height(5.dp)
                                 .clip(androidx.compose.foundation.shape.RoundedCornerShape(2.dp)),
-                            color = Color(0xFF55FF55),
+                            color = Color(0xFFFFFFFF),
                             trackColor = Color(0xFF242426)
                         )
                     } else {
@@ -891,7 +891,7 @@ private fun TaskItem(
                                 .fillMaxWidth()
                                 .height(5.dp)
                                 .clip(androidx.compose.foundation.shape.RoundedCornerShape(2.dp)),
-                            color = Color(0xFF55FF55),
+                            color = Color(0xFFFFFFFF),
                             trackColor = Color(0xFF242426)
                         )
                     }

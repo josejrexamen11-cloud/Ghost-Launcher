@@ -61,7 +61,7 @@ val GOLD = TextColor(foreground = Color(0xFFFFAA00), background = Color(0xFF2A2A
 val GRAY = TextColor(foreground = Color(0xFFAAAAAA), background = Color(0xFF2A2A2A))
 val DARK_GRAY = TextColor(foreground = Color(0xFF555555), background = Color(0xFF151515))
 val BLUE = TextColor(foreground = Color(0xFF5555FF), background = Color(0xFF15153F))
-val GREEN = TextColor(foreground = Color(0xFF55FF55), background = Color(0xFF153F15))
+val GREEN = TextColor(foreground = Color(0xFFFFFFFF), background = Color(0xFF153F15))
 val AQUA = TextColor(foreground = Color(0xFF55FFFF), background = Color(0xFF153F3F))
 val RED = TextColor(foreground = Color(0xFFFF5555), background = Color(0xFF3F1515))
 val LIGHT_PURPLE = TextColor(foreground = Color(0xFFFF55FF), background = Color(0xFF3F153F))

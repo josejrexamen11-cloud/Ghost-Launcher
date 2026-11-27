@@ -608,7 +608,7 @@ private fun Versions(
                             modifier = Modifier.fillMaxWidth(),
                             singleLine = true,
                             textStyle = TextStyle(color = Color.White, fontFamily = MinecraftFontFamily, fontSize = 10.5.sp),
-                            cursorBrush = SolidColor(Color(0xFF55FF55)),
+                            cursorBrush = SolidColor(Color(0xFFFFFFFF)),
                             decorationBox = { inner ->
                                 if (viewModel.searchMCVersion.isEmpty()) {
                                     Text(
@@ -627,7 +627,7 @@ private fun Versions(
                             .clip(RoundedCornerShape(3.dp))
                             .background(if (viewModel.showOnlyMCRelease) Color(0xFF263820) else Color(0xFF222224))
                             .border(
-                                BorderStroke(1.dp, if (viewModel.showOnlyMCRelease) Color(0xFF55FF55) else Color(0xFF383838)),
+                                BorderStroke(1.dp, if (viewModel.showOnlyMCRelease) Color(0xFFFFFFFF) else Color(0xFF383838)),
                                 RoundedCornerShape(3.dp)
                             )
                             .clickable {
@@ -644,13 +644,13 @@ private fun Versions(
                                 Icon(
                                     painter = painterResource(R.drawable.ic_check),
                                     contentDescription = null,
-                                    tint = Color(0xFF55FF55),
+                                    tint = Color(0xFFFFFFFF),
                                     modifier = Modifier.size(11.dp)
                                 )
                             }
                             Text(
                                 text = "RELEASE",
-                                color = if (viewModel.showOnlyMCRelease) Color(0xFF55FF55) else Color(0xFFCCCCCC),
+                                color = if (viewModel.showOnlyMCRelease) Color(0xFFFFFFFF) else Color(0xFFCCCCCC),
                                 fontFamily = MinecraftFontFamily,
                                 fontSize = 9.sp
                             )
@@ -906,7 +906,7 @@ private fun ProjectInfo(
                                         text = stringResource(R.string.download_assets_links),
                                         style = MaterialTheme.typography.titleMedium.copy(
                                             fontFamily = MinecraftFontFamily,
-                                            color = Color(0xFF55FF55)
+                                            color = Color(0xFFFFFFFF)
                                         )
                                     )
 

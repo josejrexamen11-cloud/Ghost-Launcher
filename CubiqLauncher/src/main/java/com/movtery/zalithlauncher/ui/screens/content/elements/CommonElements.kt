@@ -533,7 +533,7 @@ private fun InstallingTaskItem(
             TaskStage.COMPLETED -> R.drawable.ic_check
         }
         val tintColor = if (taskStage == TaskStage.COMPLETED || taskStage == TaskStage.RUNNING) {
-            Color(0xFF55FF55)
+            Color(0xFFFFFFFF)
         } else {
             Color(0xFFAAAAAA)
         }
@@ -580,7 +580,7 @@ private fun InstallingTaskItem(
                         modifier = Modifier
                             .fillMaxHeight()
                             .fillMaxWidth(if (taskProgress < 0) 0.5f else taskProgress.coerceIn(0f, 1f))
-                            .background(Color(0xFF55FF55))
+                            .background(Color(0xFFFFFFFF))
                     )
                 }
 
@@ -595,7 +595,7 @@ private fun InstallingTaskItem(
                     if (rateBytesPerSec != null && rateBytesPerSec!! > 0L) {
                         Text(
                             text = "Speed: ${formatFileSize(rateBytesPerSec!!)}/s",
-                            color = Color(0xFF55FF55),
+                            color = Color(0xFFFFFFFF),
                             fontFamily = MinecraftFontFamily,
                             fontWeight = FontWeight.Bold,
                             fontSize = 10.sp
@@ -607,7 +607,7 @@ private fun InstallingTaskItem(
                     if (taskProgress >= 0) {
                         Text(
                             text = "${(taskProgress * 100).toInt()}%",
-                            color = Color(0xFF55FF55),
+                            color = Color(0xFFFFFFFF),
                             fontFamily = MinecraftFontFamily,
                             fontWeight = FontWeight.Bold,
                             fontSize = 10.5.sp

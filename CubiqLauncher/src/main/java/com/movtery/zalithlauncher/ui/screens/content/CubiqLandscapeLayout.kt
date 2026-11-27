@@ -576,7 +576,7 @@ private fun LandscapePlayScreen(
                                 text = {
                                     Text(
                                         text = "+ Manage Installations",
-                                        color = Color(0xFF55FF55),
+                                        color = Color(0xFFFFFFFF),
                                         fontFamily = MinecraftFontFamily,
                                         fontWeight = FontWeight.Bold
                                     )
@@ -695,7 +695,7 @@ private fun LandscapeNavButton(
     val bgModifier = if (isActive) {
         Modifier
             .background(Color(0xFF1E3A19), RoundedCornerShape(6.dp))
-            .border(BorderStroke(1.5.dp, Color(0xFF55FF55)), RoundedCornerShape(6.dp))
+            .border(BorderStroke(1.5.dp, Color(0xFFFFFFFF)), RoundedCornerShape(6.dp))
     } else {
         Modifier.background(Color.Transparent)
     }

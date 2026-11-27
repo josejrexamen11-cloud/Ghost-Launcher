@@ -67,7 +67,7 @@ fun FavoriteToggleLabel(
     shape: Shape = RoundedCornerShape(2.dp)
 ) {
     val tint = if (isFavorite) {
-        Color(0xFF55FF55)
+        Color(0xFFFFFFFF)
     } else {
         Color(0xFFAAAAAA)
     }
@@ -115,7 +115,7 @@ fun FavoriteIdentifier(
         Color(0xFF262628)
     }
     val contentColor = if (isFavorite) {
-        Color(0xFF55FF55)
+        Color(0xFFFFFFFF)
     } else {
         Color(0xFFCCCCCC)
     }

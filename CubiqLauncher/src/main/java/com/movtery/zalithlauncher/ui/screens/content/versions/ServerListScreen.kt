@@ -556,7 +556,7 @@ fun ServerListScreen(
                         Modifier.fillMaxSize(),
                         contentAlignment = Alignment.Center
                     ) {
-                        LoadingIndicator(color = Color(0xFF55FF55))
+                        LoadingIndicator(color = Color(0xFFFFFFFF))
                     }
                 }
                 is ServerListOperation.LoadedData -> {
@@ -847,7 +847,7 @@ private fun ServerItem(
                                 )
                                 Text(
                                     text = "${ot.result.pingMs}ms",
-                                    color = Color(0xFF55FF55),
+                                    color = Color(0xFFFFFFFF),
                                     fontFamily = MinecraftFontFamily,
                                     fontSize = 10.sp
                                 )
@@ -882,7 +882,7 @@ private fun ServerItem(
                         modifier = Modifier
                             .fillMaxWidth()
                             .height(4.dp),
-                        color = Color(0xFF55FF55),
+                        color = Color(0xFFFFFFFF),
                         trackColor = Color(0xFF282828)
                     )
                 }

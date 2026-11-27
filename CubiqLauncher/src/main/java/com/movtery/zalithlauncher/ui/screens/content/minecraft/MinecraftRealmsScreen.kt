@@ -123,7 +123,7 @@ fun MinecraftRealmsScreen(
                     Column {
                         Text(
                             text = "MINECRAFT REALMS & MULTIPLAYER",
-                            color = Color(0xFF55FF55),
+                            color = Color(0xFFFFFFFF),
                             fontFamily = MinecraftFontFamily,
                             fontWeight = FontWeight.Bold,
                             fontSize = 13.sp
@@ -221,7 +221,7 @@ fun MinecraftRealmsScreen(
                                 )
                                 Text(
                                     text = srv.address,
-                                    color = Color(0xFF55FF55),
+                                    color = Color(0xFFFFFFFF),
                                     fontFamily = MinecraftFontFamily,
                                     fontSize = 10.5.sp
                                 )
@@ -299,7 +299,7 @@ fun MinecraftRealmsScreen(
                                     fontFamily = MinecraftFontFamily,
                                     fontSize = 12.sp
                                 ),
-                                cursorBrush = SolidColor(Color(0xFF55FF55))
+                                cursorBrush = SolidColor(Color(0xFFFFFFFF))
                             )
                         }
 
@@ -329,7 +329,7 @@ fun MinecraftRealmsScreen(
                                     fontFamily = MinecraftFontFamily,
                                     fontSize = 12.sp
                                 ),
-                                cursorBrush = SolidColor(Color(0xFF55FF55))
+                                cursorBrush = SolidColor(Color(0xFFFFFFFF))
                             )
                         }
                     }

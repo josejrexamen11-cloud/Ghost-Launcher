@@ -91,7 +91,7 @@ fun ScalingActionButton(
         contentColor = Color.White
     ),
     elevation: ButtonElevation? = ButtonDefaults.buttonElevation(),
-    border: BorderStroke? = BorderStroke(1.dp, Color(0xFF388E3C)),
+    border: BorderStroke? = BorderStroke(1.dp, Color(0xFF9E9E9E)),
     contentPadding: PaddingValues = ButtonDefaults.ContentPadding,
     content: @Composable RowScope.() -> Unit
 ) {

@@ -378,7 +378,7 @@ private fun VersionHeader(
                     .border(
                         BorderStroke(
                             1.dp,
-                            if (versionFilter.id.isNotEmpty()) Color(0xFF55FF55) else Color(0xFF383838)
+                            if (versionFilter.id.isNotEmpty()) Color(0xFFFFFFFF) else Color(0xFF383838)
                         ),
                         RoundedCornerShape(3.dp)
                     )
@@ -392,7 +392,7 @@ private fun VersionHeader(
                     Icon(
                         painter = painterResource(R.drawable.ic_search),
                         contentDescription = null,
-                        tint = if (versionFilter.id.isNotEmpty()) Color(0xFF55FF55) else Color(0xFF888888),
+                        tint = if (versionFilter.id.isNotEmpty()) Color(0xFFFFFFFF) else Color(0xFF888888),
                         modifier = Modifier.size(16.dp)
                     )
                     Spacer(modifier = Modifier.width(6.dp))
@@ -415,7 +415,7 @@ private fun VersionHeader(
                                 fontSize = 12.sp,
                                 fontWeight = FontWeight.Bold
                             ),
-                            cursorBrush = androidx.compose.ui.graphics.SolidColor(Color(0xFF55FF55)),
+                            cursorBrush = androidx.compose.ui.graphics.SolidColor(Color(0xFFFFFFFF)),
                             modifier = Modifier.fillMaxWidth()
                         )
                     }

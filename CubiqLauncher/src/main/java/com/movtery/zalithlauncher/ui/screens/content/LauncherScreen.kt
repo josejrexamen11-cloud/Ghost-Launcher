@@ -532,7 +532,7 @@ fun LauncherScreen(
                                                                 text = {
                                                                     Text(
                                                                         text = "+ Manage Installations",
-                                                                        color = Color(0xFF55FF55),
+                                                                        color = Color(0xFFFFFFFF),
                                                                         fontFamily = MinecraftFontFamily,
                                                                         fontWeight = FontWeight.Bold
                                                                     )
@@ -633,7 +633,7 @@ fun LauncherScreen(
                                                             text = {
                                                                 Text(
                                                                     text = "+ Manage Installations",
-                                                                    color = Color(0xFF55FF55),
+                                                                    color = Color(0xFFFFFFFF),
                                                                     fontFamily = MinecraftFontFamily,
                                                                     fontWeight = FontWeight.Bold
                                                                 )
@@ -778,7 +778,7 @@ private fun MinecraftLaunchLoadingOverlay() {
                     modifier = Modifier
                         .fillMaxHeight()
                         .fillMaxWidth(pulseAlpha)
-                        .background(Color(0xFF55FF55))
+                        .background(Color(0xFFFFFFFF))
                 )
             }
 
@@ -998,7 +998,7 @@ private fun TopAccountHeader(
                     Icon(
                         painter = painterResource(R.drawable.ic_person_outlined),
                         contentDescription = null,
-                        tint = Color(0xFF55FF55),
+                        tint = Color(0xFFFFFFFF),
                         modifier = Modifier.size(16.dp)
                     )
                     Text(
@@ -1067,7 +1067,7 @@ private fun TopAccountHeader(
                                 .border(
                                     BorderStroke(
                                         1.dp,
-                                        if (isCurrent) Color(0xFF55FF55) else Color(0xFF333336)
+                                        if (isCurrent) Color(0xFFFFFFFF) else Color(0xFF333336)
                                     ),
                                     RoundedCornerShape(3.dp)
                                 )
@@ -1083,7 +1083,7 @@ private fun TopAccountHeader(
                             Column(modifier = Modifier.weight(1f)) {
                                 Text(
                                     text = acc.username,
-                                    color = if (isCurrent) Color(0xFF55FF55) else Color.White,
+                                    color = if (isCurrent) Color(0xFFFFFFFF) else Color.White,
                                     fontFamily = MinecraftFontFamily,
                                     fontWeight = FontWeight.Bold,
                                     fontSize = 12.sp,
@@ -1105,7 +1105,7 @@ private fun TopAccountHeader(
                                 ) {
                                     Text(
                                         text = "ACTIVE",
-                                        color = Color(0xFF55FF55),
+                                        color = Color(0xFFFFFFFF),
                                         fontFamily = MinecraftFontFamily,
                                         fontWeight = FontWeight.Bold,
                                         fontSize = 8.5.sp
@@ -1372,7 +1372,7 @@ private fun TopAccountHeader(
                         colors = OutlinedTextFieldDefaults.colors(
                             focusedContainerColor = Color(0xFF242426),
                             unfocusedContainerColor = Color(0xFF242426),
-                            focusedBorderColor = Color(0xFF55FF55),
+                            focusedBorderColor = Color(0xFFFFFFFF),
                             unfocusedBorderColor = Color(0xFF383838),
                             focusedTextColor = Color.White,
                             unfocusedTextColor = Color.White
@@ -1687,7 +1687,7 @@ private fun InstalledVersionsSection(
             )
             Text(
                 text = "+ ADD NEW",
-                color = Color(0xFF55FF55),
+                color = Color(0xFFFFFFFF),
                 fontFamily = MinecraftFontFamily,
                 fontWeight = FontWeight.Bold,
                 fontSize = 12.sp,
@@ -1758,7 +1758,7 @@ private fun InstalledVersionsSection(
                             com.movtery.zalithlauncher.ui.sound.MinecraftSoundHelper.playClickSound()
                             onSelectVersion(ver)
                         },
-                    borderColor = if (isSelected) Color(0xFF55FF55) else Color(0xFF333333)
+                    borderColor = if (isSelected) Color(0xFFFFFFFF) else Color(0xFF333333)
                 ) {
                     Row(
                         modifier = Modifier
@@ -1773,7 +1773,7 @@ private fun InstalledVersionsSection(
                                 .size(56.dp)
                                 .clip(RoundedCornerShape(3.dp))
                                 .background(Color(0xFF222224))
-                                .border(BorderStroke(1.dp, if (isSelected) Color(0xFF55FF55) else Color(0xFF383838)), RoundedCornerShape(3.dp)),
+                                .border(BorderStroke(1.dp, if (isSelected) Color(0xFFFFFFFF) else Color(0xFF383838)), RoundedCornerShape(3.dp)),
                             contentAlignment = Alignment.Center
                         ) {
                             if (hasCustomIcon) {
@@ -1823,7 +1823,7 @@ private fun InstalledVersionsSection(
                             if (isSelected) {
                                 Text(
                                     text = "● ACTIVE",
-                                    color = Color(0xFF55FF55),
+                                    color = Color(0xFFFFFFFF),
                                     fontFamily = MinecraftFontFamily,
                                     fontWeight = FontWeight.Bold,
                                     fontSize = 9.sp
@@ -2109,7 +2109,7 @@ fun CompactBackgroundDownloadBar(
             Icon(
                 painter = painterResource(id = R.drawable.ic_download),
                 contentDescription = null,
-                tint = Color(0xFF55FF55).copy(alpha = alpha),
+                tint = Color(0xFFFFFFFF).copy(alpha = alpha),
                 modifier = Modifier.size(20.dp)
             )
 
@@ -2170,7 +2170,7 @@ fun CompactBackgroundDownloadBar(
                     if (spd > 0L) {
                         Text(
                             text = "${formatFileSize(spd)}/s",
-                            color = Color(0xFF55FF55),
+                            color = Color(0xFFFFFFFF),
                             fontFamily = MinecraftFontFamily,
                             fontSize = 10.sp,
                             softWrap = false,
@@ -2193,7 +2193,7 @@ fun CompactBackgroundDownloadBar(
                             modifier = Modifier
                                 .fillMaxWidth(progressFloat)
                                 .fillMaxHeight()
-                                .background(Color(0xFF55FF55))
+                                .background(Color(0xFFFFFFFF))
                         )
                     } else {
                         Box(

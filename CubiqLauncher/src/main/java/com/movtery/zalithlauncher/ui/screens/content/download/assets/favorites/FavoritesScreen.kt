@@ -492,7 +492,7 @@ private fun FavoritesFilter(
                             .clip(RoundedCornerShape(2.dp))
                             .background(if (isSel) Color(0xFF3C8527) else Color(0xFF262628))
                             .border(
-                                BorderStroke(1.dp, if (isSel) Color(0xFF55FF55) else Color(0xFF383838)),
+                                BorderStroke(1.dp, if (isSel) Color(0xFFFFFFFF) else Color(0xFF383838)),
                                 RoundedCornerShape(2.dp)
                             )
                             .clickable { viewModel.platformFilter = p },
@@ -519,7 +519,7 @@ private fun FavoritesFilter(
                             .clip(RoundedCornerShape(2.dp))
                             .background(if (isSel) Color(0xFF3C8527) else Color(0xFF262628))
                             .border(
-                                BorderStroke(1.dp, if (isSel) Color(0xFF55FF55) else Color(0xFF383838)),
+                                BorderStroke(1.dp, if (isSel) Color(0xFFFFFFFF) else Color(0xFF383838)),
                                 RoundedCornerShape(2.dp)
                             )
                             .clickable { viewModel.sortBy = s },
@@ -558,7 +558,7 @@ private fun FavoritesFilter(
                                 .clip(RoundedCornerShape(2.dp))
                                 .background(if (isSel) Color(0xFF3C8527) else Color(0xFF262628))
                                 .border(
-                                    BorderStroke(1.dp, if (isSel) Color(0xFF55FF55) else Color(0xFF383838)),
+                                    BorderStroke(1.dp, if (isSel) Color(0xFFFFFFFF) else Color(0xFF383838)),
                                     RoundedCornerShape(2.dp)
                                 )
                                 .clickable {

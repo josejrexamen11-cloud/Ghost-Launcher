@@ -65,7 +65,7 @@ fun CubiqUpdateDialog(
                 Column {
                     Text(
                         text = "NEW VERSION AVAILABLE",
-                        color = Color(0xFF55FF55),
+                        color = Color(0xFFFFFFFF),
                         fontFamily = MinecraftFontFamily,
                         fontWeight = FontWeight.Bold,
                         fontSize = 15.sp

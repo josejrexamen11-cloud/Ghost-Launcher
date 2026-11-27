@@ -61,7 +61,7 @@ fun ChangeInstallationIconDialog(
         ) {
             Text(
                 text = "CHOOSE INSTALLATION ICON",
-                color = Color(0xFF55FF55),
+                color = Color(0xFFFFFFFF),
                 fontFamily = MinecraftFontFamily,
                 fontWeight = FontWeight.Bold,
                 fontSize = 15.sp

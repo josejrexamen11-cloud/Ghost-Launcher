@@ -507,7 +507,7 @@ private fun MinecraftPCNavItem(
         else listOf(Color(0xFF2C2C34), Color(0xFF222228))
     }
 
-    val textColor = if (isSelected) Color(0xFF55FF55) else Color(0xFFCCCCCC)
+    val textColor = if (isSelected) Color(0xFFFFFFFF) else Color(0xFFCCCCCC)
     val textShadow = if (isSelected) Color(0xFF0F2B0A) else Color(0xFF101012)
 
     Column(
@@ -599,7 +599,7 @@ private data class Tuple6<A, B, C, D, E, F>(
 fun MinecraftLinearProgressBar(
     modifier: Modifier = Modifier,
     progress: Float? = null,
-    color: Color = Color(0xFF55FF55),
+    color: Color = Color(0xFFFFFFFF),
     trackColor: Color = Color(0xFF141416),
     borderColor: Color = Color(0xFF383838),
     height: Dp = 8.dp

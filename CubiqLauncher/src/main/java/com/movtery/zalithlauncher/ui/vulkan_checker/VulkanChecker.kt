@@ -169,7 +169,7 @@ fun VulkanChecker(
                                             text = summary,
                                             fontFamily = com.movtery.zalithlauncher.ui.theme.MinecraftFontFamily,
                                             fontSize = 12.sp,
-                                            color = if (profiles.any { it.supported }) Color(0xFF55FF55) else Color(0xFFFF9999),
+                                            color = if (profiles.any { it.supported }) Color(0xFFFFFFFF) else Color(0xFFFF9999),
                                             lineHeight = 16.sp
                                         )
                                     }

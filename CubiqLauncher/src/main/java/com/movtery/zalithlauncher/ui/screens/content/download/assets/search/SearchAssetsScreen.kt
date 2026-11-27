@@ -453,7 +453,7 @@ fun SearchAssetsScreen(
                                     fontFamily = MinecraftFontFamily,
                                     fontSize = 12.sp
                                 ),
-                                cursorBrush = SolidColor(Color(0xFF55FF55)),
+                                cursorBrush = SolidColor(Color(0xFFFFFFFF)),
                                 singleLine = true,
                                 keyboardOptions = KeyboardOptions(imeAction = ImeAction.Search),
                                 keyboardActions = KeyboardActions(onSearch = { viewModel.resetSearch() }),
@@ -514,7 +514,7 @@ fun SearchAssetsScreen(
                                     .clip(RoundedCornerShape(2.dp))
                                     .background(if (isSelected) Color(0xFF3C8527) else Color(0xFF262628))
                                     .border(
-                                        BorderStroke(1.dp, if (isSelected) Color(0xFF55FF55) else Color(0xFF383838)),
+                                        BorderStroke(1.dp, if (isSelected) Color(0xFFFFFFFF) else Color(0xFF383838)),
                                         RoundedCornerShape(2.dp)
                                     )
                                     .clickable {
@@ -556,7 +556,7 @@ fun SearchAssetsScreen(
                                 .clip(RoundedCornerShape(2.dp))
                                 .background(if (viewModel.searchFilter.gameVersion.isNotBlank()) Color(0xFF2A3D24) else Color(0xFF262628))
                                 .border(
-                                    BorderStroke(1.dp, if (viewModel.searchFilter.gameVersion.isNotBlank()) Color(0xFF55FF55) else Color(0xFF383838)),
+                                    BorderStroke(1.dp, if (viewModel.searchFilter.gameVersion.isNotBlank()) Color(0xFFFFFFFF) else Color(0xFF383838)),
                                     RoundedCornerShape(2.dp)
                                 )
                                 .clickable { showVerDialog = true }
@@ -564,7 +564,7 @@ fun SearchAssetsScreen(
                         ) {
                             Text(
                                 text = "Ver: $curVer",
-                                color = if (viewModel.searchFilter.gameVersion.isNotBlank()) Color(0xFF55FF55) else Color(0xFFCCCCCC),
+                                color = if (viewModel.searchFilter.gameVersion.isNotBlank()) Color(0xFFFFFFFF) else Color(0xFFCCCCCC),
                                 fontFamily = MinecraftFontFamily,
                                 fontSize = 10.sp
                             )
@@ -591,7 +591,7 @@ fun SearchAssetsScreen(
                                             placeholder = { Text("e.g. 1.21.4, 1.20.1", color = Color(0xFF666666)) },
                                             singleLine = true,
                                             colors = androidx.compose.material3.OutlinedTextFieldDefaults.colors(
-                                                focusedBorderColor = Color(0xFF55FF55),
+                                                focusedBorderColor = Color(0xFFFFFFFF),
                                                 unfocusedBorderColor = Color(0xFF383838),
                                                 focusedTextColor = Color.White,
                                                 unfocusedTextColor = Color.White
@@ -657,7 +657,7 @@ fun SearchAssetsScreen(
                                     .clip(RoundedCornerShape(2.dp))
                                     .background(if (viewModel.searchFilter.modloader != null) Color(0xFF2A3D24) else Color(0xFF262628))
                                     .border(
-                                        BorderStroke(1.dp, if (viewModel.searchFilter.modloader != null) Color(0xFF55FF55) else Color(0xFF383838)),
+                                        BorderStroke(1.dp, if (viewModel.searchFilter.modloader != null) Color(0xFFFFFFFF) else Color(0xFF383838)),
                                         RoundedCornerShape(2.dp)
                                     )
                                     .clickable { showLoaderMenu = true }
@@ -665,7 +665,7 @@ fun SearchAssetsScreen(
                             ) {
                                 Text(
                                     text = "Loader: $currentLoaderName",
-                                    color = if (viewModel.searchFilter.modloader != null) Color(0xFF55FF55) else Color(0xFFCCCCCC),
+                                    color = if (viewModel.searchFilter.modloader != null) Color(0xFFFFFFFF) else Color(0xFFCCCCCC),
                                     fontFamily = MinecraftFontFamily,
                                     fontSize = 10.sp
                                 )

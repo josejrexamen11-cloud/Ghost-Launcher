@@ -531,7 +531,7 @@ private fun ContentFilter(
                         .border(
                             BorderStroke(
                                 1.dp,
-                                if (projectId.isNotEmpty()) Color(0xFF55FF55) else Color(0xFF444444)
+                                if (projectId.isNotEmpty()) Color(0xFFFFFFFF) else Color(0xFF444444)
                             ),
                             RoundedCornerShape(3.dp)
                         )
@@ -548,7 +548,7 @@ private fun ContentFilter(
                             fontFamily = MinecraftFontFamily,
                             fontSize = 12.sp
                         ),
-                        cursorBrush = androidx.compose.ui.graphics.SolidColor(Color(0xFF55FF55)),
+                        cursorBrush = androidx.compose.ui.graphics.SolidColor(Color(0xFFFFFFFF)),
                         keyboardOptions = KeyboardOptions(imeAction = ImeAction.Search),
                         keyboardActions = KeyboardActions(onSearch = { onSearch() }),
                         decorationBox = { innerTextField ->
@@ -590,7 +590,7 @@ private fun ContentFilter(
                             .clip(RoundedCornerShape(2.dp))
                             .background(if (isSelected) Color(0xFF263820) else Color(0xFF222224))
                             .border(
-                                BorderStroke(1.dp, if (isSelected) Color(0xFF55FF55) else Color(0xFF383838)),
+                                BorderStroke(1.dp, if (isSelected) Color(0xFFFFFFFF) else Color(0xFF383838)),
                                 RoundedCornerShape(2.dp)
                             )
                             .clickable { onPlatformChange(plat) },
@@ -604,7 +604,7 @@ private fun ContentFilter(
                                 modifier = Modifier.size(14.dp),
                                 painter = painterResource(plat.getDrawable()),
                                 contentDescription = plat.displayName,
-                                tint = if (isSelected) Color(0xFF55FF55) else Color(0xFFAAAAAA)
+                                tint = if (isSelected) Color(0xFFFFFFFF) else Color(0xFFAAAAAA)
                             )
                             Text(
                                 text = plat.displayName.uppercase(),

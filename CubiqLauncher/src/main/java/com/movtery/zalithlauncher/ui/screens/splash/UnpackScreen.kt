@@ -92,7 +92,7 @@ fun UnpackScreen(
 
                 Text(
                     text = "GHOST SETUP",
-                    color = Color(0xFF55FF55),
+                    color = Color(0xFFFFFFFF),
                     fontFamily = MinecraftFontFamily,
                     fontSize = 14.sp,
                     fontWeight = FontWeight.Bold,
@@ -228,7 +228,7 @@ private fun MinecraftTaskItem(
                     message?.let { taskMsg ->
                         Text(
                             text = taskMsg,
-                            color = Color(0xFF55FF55),
+                            color = Color(0xFFFFFFFF),
                             fontFamily = MinecraftFontFamily,
                             fontSize = 10.5.sp,
                             maxLines = 1
@@ -239,7 +239,7 @@ private fun MinecraftTaskItem(
                         modifier = Modifier
                             .fillMaxWidth()
                             .height(3.dp),
-                        color = Color(0xFF55FF55),
+                        color = Color(0xFFFFFFFF),
                         trackColor = Color(0xFF1E381A)
                     )
                 }
@@ -267,14 +267,14 @@ private fun MinecraftTaskItem(
                 InstallableItem.State.RUNNING -> {
                     MinecraftPixelDonutSpinner(
                         size = 20.dp,
-                        baseColor = Color(0xFF55FF55)
+                        baseColor = Color(0xFFFFFFFF)
                     )
                 }
                 InstallableItem.State.FINISHED -> {
                     Icon(
                         painter = painterResource(R.drawable.ic_check),
                         contentDescription = null,
-                        tint = Color(0xFF55FF55),
+                        tint = Color(0xFFFFFFFF),
                         modifier = Modifier.size(22.dp)
                     )
                 }
