@@ -183,7 +183,7 @@ fun LandscapeLauncherLayout(
                 }
                 Column(modifier = Modifier.weight(1f)) {
                     Text(
-                        text = account?.username ?: "Cubiq",
+                        text = account?.username ?: "Ghost",
                         color = Color.White,
                         fontFamily = MinecraftFontFamily,
                         fontWeight = FontWeight.Bold,
