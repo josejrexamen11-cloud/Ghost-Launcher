@@ -530,21 +530,6 @@ class MainActivity : BaseAppCompatActivity() {
                     onLinkClick = { eventViewModel.sendEvent(EventViewModel.Event.OpenLink(it)) }
                 )
 
-                // Cubiq Launcher GitHub Update Dialog
-                val cubiqUpdate by com.movtery.zalithlauncher.game.versioninfo.CubiqGitHubManager.newUpdate.collectAsStateWithLifecycle()
-                cubiqUpdate?.let { release ->
-                    com.movtery.zalithlauncher.ui.screens.content.elements.CubiqUpdateDialog(
-                        release = release,
-                        onDownloadNow = { url ->
-                            openLink(url)
-                            com.movtery.zalithlauncher.game.versioninfo.CubiqGitHubManager.dismissUpdate(ignoreForVersion = true)
-                        },
-                        onNotNow = {
-                            com.movtery.zalithlauncher.game.versioninfo.CubiqGitHubManager.dismissUpdate(ignoreForVersion = true)
-                        }
-                    )
-                }
-
                 val vcOperation by vulkanCheckerViewModel.vcOperation.collectAsStateWithLifecycle()
                 VulkanChecker(
                     operation = vcOperation,

@@ -91,7 +91,7 @@ fun UnpackScreen(
                 }
 
                 Text(
-                    text = "CUBIQ SETUP",
+                    text = "GHOST SETUP",
                     color = Color(0xFF55FF55),
                     fontFamily = MinecraftFontFamily,
                     fontSize = 14.sp,
@@ -113,7 +113,7 @@ fun UnpackScreen(
                         text = if (installing) {
                             "Extracting Minecraft Java runtimes, LWJGL libraries, and native assets..."
                         } else {
-                            "Cubiq requires unpacking internal Java runtimes (Java 8, 17, 21), LWJGL libraries, and native assets to run Java Edition."
+                            "Ghost Launcher requires unpacking internal Java runtimes (Java 8, 17, 21), LWJGL libraries, and native assets to run Java Edition."
                         },
                         color = Color(0xFFC0C0C0),
                         fontFamily = MinecraftFontFamily,

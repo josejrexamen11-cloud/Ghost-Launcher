@@ -153,17 +153,8 @@ object CubiqGitHubManager {
         }
     }
 
-    private fun checkUpdateAvailable(latest: CubiqReleaseItem) {
-        val currentVer = BuildConfig.VERSION_NAME.removePrefix("v").trim()
-        val latestVer = latest.tagName.removePrefix("v").trim()
-
-        if (isVersionGreater(latestVer, currentVer)) {
-            val ignoredVersion = AllSettings.lastIgnoredVersion.getValue()
-            val latestCode = parseVersionToCode(latestVer)
-            if (ignoredVersion == null || ignoredVersion != latestCode) {
-                _newUpdate.value = latest
-            }
-        }
+    private fun checkUpdateAvailable(@Suppress("UNUSED_PARAMETER") latest: CubiqReleaseItem) {
+        // Disabled in Ghost Launcher: no upstream update prompts.
     }
 
     fun dismissUpdate(ignoreForVersion: Boolean = false) {

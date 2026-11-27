@@ -256,19 +256,6 @@ fun LauncherScreen(
         val configuration = LocalConfiguration.current
         val isLandscape = configuration.orientation == Configuration.ORIENTATION_LANDSCAPE
 
-        var showForkWarning by rememberSaveable {
-            mutableStateOf(!com.movtery.zalithlauncher.setting.AllSettings.forkNoticeDismissed.getValue())
-        }
-        if (showForkWarning) {
-            ForkWarningDialog(
-                onDismiss = { showForkWarning = false },
-                onDontShowAgain = {
-                    com.movtery.zalithlauncher.setting.AllSettings.forkNoticeDismissed.save(true)
-                    showForkWarning = false
-                }
-            )
-        }
-
         val lastCrashExitCode = remember { com.movtery.zalithlauncher.setting.AllSettings.lastCrashCode.getValue() }
         val lastCrashLogPath = remember { com.movtery.zalithlauncher.setting.AllSettings.lastCrashLogPath.getValue() }
         val lastCrashIsSignal = remember { com.movtery.zalithlauncher.setting.AllSettings.lastCrashIsSignal.getValue() }
