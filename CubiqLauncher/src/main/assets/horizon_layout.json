@@ -1,0 +1,650 @@
+{
+  "info": {
+    "name": {
+      "default": "Horizon Controls",
+      "matchQueue": []
+    },
+    "author": {
+      "default": "Horizon",
+      "matchQueue": []
+    },
+    "description": {
+      "default": "Horizon touch layout converted for Ghost Launcher.",
+      "matchQueue": []
+    },
+    "versionCode": 1,
+    "versionName": "1.0"
+  },
+  "layers": [
+    {
+      "name": "control",
+      "uuid": "layer_horizon_control",
+      "hide": false,
+      "visibilityType": "always",
+      "normalButtons": [
+        {
+          "text": {
+            "default": "PRI",
+            "matchQueue": []
+          },
+          "uuid": "7f403208a0ca",
+          "position": {
+            "x": 6685,
+            "y": 1838
+          },
+          "buttonSize": {
+            "type": "percentage",
+            "widthDp": 50.0,
+            "heightDp": 50.0,
+            "widthPercentage": 2921,
+            "heightPercentage": 2377,
+            "widthReference": "screen_height",
+            "heightReference": "screen_height"
+          },
+          "buttonStyle": "horizon_button_style",
+          "visibilityType": "always",
+          "clickEvents": [
+            {
+              "type": "launcher_event",
+              "key": "GLFW_MOUSE_BUTTON_LEFT"
+            }
+          ],
+          "isSwipple": false,
+          "isPenetrable": true,
+          "isToggleable": false,
+          "opacity": 0.82
+        },
+        {
+          "text": {
+            "default": "SEC",
+            "matchQueue": []
+          },
+          "uuid": "0a1131834286",
+          "position": {
+            "x": 2179,
+            "y": 3156
+          },
+          "buttonSize": {
+            "type": "percentage",
+            "widthDp": 50.0,
+            "heightDp": 50.0,
+            "widthPercentage": 1829,
+            "heightPercentage": 1488,
+            "widthReference": "screen_height",
+            "heightReference": "screen_height"
+          },
+          "buttonStyle": "horizon_button_style",
+          "visibilityType": "always",
+          "clickEvents": [
+            {
+              "type": "launcher_event",
+              "key": "GLFW_MOUSE_BUTTON_RIGHT"
+            }
+          ],
+          "isSwipple": false,
+          "isPenetrable": true,
+          "isToggleable": false,
+          "opacity": 0.82
+        },
+        {
+          "text": {
+            "default": "JUMP",
+            "matchQueue": []
+          },
+          "uuid": "5f0a1954ca7a",
+          "position": {
+            "x": 7768,
+            "y": 6357
+          },
+          "buttonSize": {
+            "type": "percentage",
+            "widthDp": 50.0,
+            "heightDp": 50.0,
+            "widthPercentage": 4595,
+            "heightPercentage": 3184,
+            "widthReference": "screen_height",
+            "heightReference": "screen_height"
+          },
+          "buttonStyle": "horizon_button_style",
+          "visibilityType": "in_game",
+          "clickEvents": [
+            {
+              "type": "key",
+              "key": "GLFW_KEY_SPACE"
+            }
+          ],
+          "isSwipple": false,
+          "isPenetrable": true,
+          "isToggleable": false,
+          "opacity": 0.82
+        },
+        {
+          "text": {
+            "default": "SNEAK",
+            "matchQueue": []
+          },
+          "uuid": "d9dcd2d09b85",
+          "position": {
+            "x": 7044,
+            "y": 7738
+          },
+          "buttonSize": {
+            "type": "percentage",
+            "widthDp": 50.0,
+            "heightDp": 50.0,
+            "widthPercentage": 1546,
+            "heightPercentage": 1325,
+            "widthReference": "screen_height",
+            "heightReference": "screen_height"
+          },
+          "buttonStyle": "horizon_button_style",
+          "visibilityType": "in_game",
+          "clickEvents": [
+            {
+              "type": "key",
+              "key": "GLFW_KEY_LEFT_SHIFT"
+            }
+          ],
+          "isSwipple": false,
+          "isPenetrable": false,
+          "isToggleable": true,
+          "opacity": 0.82
+        },
+        {
+          "text": {
+            "default": "SPRINT",
+            "matchQueue": []
+          },
+          "uuid": "0786d73a5d6b",
+          "position": {
+            "x": 8294,
+            "y": 4551
+          },
+          "buttonSize": {
+            "type": "percentage",
+            "widthDp": 50.0,
+            "heightDp": 50.0,
+            "widthPercentage": 1546,
+            "heightPercentage": 1325,
+            "widthReference": "screen_height",
+            "heightReference": "screen_height"
+          },
+          "buttonStyle": "horizon_button_style",
+          "visibilityType": "in_game",
+          "clickEvents": [
+            {
+              "type": "key",
+              "key": "GLFW_KEY_LEFT_CONTROL"
+            }
+          ],
+          "isSwipple": false,
+          "isPenetrable": false,
+          "isToggleable": true,
+          "opacity": 0.82
+        },
+        {
+          "text": {
+            "default": "SWAP",
+            "matchQueue": []
+          },
+          "uuid": "1bcff4106e4d",
+          "position": {
+            "x": 7096,
+            "y": 5727
+          },
+          "buttonSize": {
+            "type": "percentage",
+            "widthDp": 50.0,
+            "heightDp": 50.0,
+            "widthPercentage": 1318,
+            "heightPercentage": 1147,
+            "widthReference": "screen_height",
+            "heightReference": "screen_height"
+          },
+          "buttonStyle": "horizon_button_style",
+          "visibilityType": "in_game",
+          "clickEvents": [
+            {
+              "type": "key",
+              "key": "GLFW_KEY_F"
+            }
+          ],
+          "isSwipple": false,
+          "isPenetrable": false,
+          "isToggleable": false,
+          "opacity": 0.82
+        },
+        {
+          "text": {
+            "default": "INV",
+            "matchQueue": []
+          },
+          "uuid": "91ca55815fee",
+          "position": {
+            "x": 5668,
+            "y": 7927
+          },
+          "buttonSize": {
+            "type": "percentage",
+            "widthDp": 50.0,
+            "heightDp": 50.0,
+            "widthPercentage": 1440,
+            "heightPercentage": 1147,
+            "widthReference": "screen_height",
+            "heightReference": "screen_height"
+          },
+          "buttonStyle": "horizon_button_style",
+          "visibilityType": "always",
+          "clickEvents": [
+            {
+              "type": "key",
+              "key": "GLFW_KEY_E"
+            }
+          ],
+          "isSwipple": false,
+          "isPenetrable": false,
+          "isToggleable": false,
+          "opacity": 0.82
+        },
+        {
+          "text": {
+            "default": "DROP",
+            "matchQueue": []
+          },
+          "uuid": "fc72b5fb54e0",
+          "position": {
+            "x": 8614,
+            "y": 2871
+          },
+          "buttonSize": {
+            "type": "percentage",
+            "widthDp": 50.0,
+            "heightDp": 50.0,
+            "widthPercentage": 1242,
+            "heightPercentage": 1058,
+            "widthReference": "screen_height",
+            "heightReference": "screen_height"
+          },
+          "buttonStyle": "horizon_button_style",
+          "visibilityType": "in_game",
+          "clickEvents": [
+            {
+              "type": "key",
+              "key": "GLFW_KEY_Q"
+            }
+          ],
+          "isSwipple": false,
+          "isPenetrable": false,
+          "isToggleable": false,
+          "opacity": 0.82
+        },
+        {
+          "text": {
+            "default": "ESC",
+            "matchQueue": []
+          },
+          "uuid": "14b0f0639006",
+          "position": {
+            "x": 415,
+            "y": 372
+          },
+          "buttonSize": {
+            "type": "percentage",
+            "widthDp": 50.0,
+            "heightDp": 50.0,
+            "widthPercentage": 1235,
+            "heightPercentage": 855,
+            "widthReference": "screen_height",
+            "heightReference": "screen_height"
+          },
+          "buttonStyle": "horizon_button_style",
+          "visibilityType": "always",
+          "clickEvents": [
+            {
+              "type": "key",
+              "key": "GLFW_KEY_ESCAPE"
+            }
+          ],
+          "isSwipple": false,
+          "isPenetrable": false,
+          "isToggleable": false,
+          "opacity": 0.82
+        },
+        {
+          "text": {
+            "default": "DEBUG",
+            "matchQueue": []
+          },
+          "uuid": "5346779bb29c",
+          "position": {
+            "x": 1607,
+            "y": 372
+          },
+          "buttonSize": {
+            "type": "percentage",
+            "widthDp": 50.0,
+            "heightDp": 50.0,
+            "widthPercentage": 1273,
+            "heightPercentage": 855,
+            "widthReference": "screen_height",
+            "heightReference": "screen_height"
+          },
+          "buttonStyle": "horizon_button_style",
+          "visibilityType": "in_game",
+          "clickEvents": [
+            {
+              "type": "key",
+              "key": "GLFW_KEY_F3"
+            }
+          ],
+          "isSwipple": false,
+          "isPenetrable": false,
+          "isToggleable": false,
+          "opacity": 0.82
+        },
+        {
+          "text": {
+            "default": "3RD",
+            "matchQueue": []
+          },
+          "uuid": "3f3459168e83",
+          "position": {
+            "x": 2820,
+            "y": 372
+          },
+          "buttonSize": {
+            "type": "percentage",
+            "widthDp": 50.0,
+            "heightDp": 50.0,
+            "widthPercentage": 1216,
+            "heightPercentage": 855,
+            "widthReference": "screen_height",
+            "heightReference": "screen_height"
+          },
+          "buttonStyle": "horizon_button_style",
+          "visibilityType": "in_game",
+          "clickEvents": [
+            {
+              "type": "key",
+              "key": "GLFW_KEY_F5"
+            }
+          ],
+          "isSwipple": false,
+          "isPenetrable": false,
+          "isToggleable": false,
+          "opacity": 0.82
+        },
+        {
+          "text": {
+            "default": "CHAT",
+            "matchQueue": []
+          },
+          "uuid": "541418882d87",
+          "position": {
+            "x": 6015,
+            "y": 372
+          },
+          "buttonSize": {
+            "type": "percentage",
+            "widthDp": 50.0,
+            "heightDp": 50.0,
+            "widthPercentage": 1235,
+            "heightPercentage": 855,
+            "widthReference": "screen_height",
+            "heightReference": "screen_height"
+          },
+          "buttonStyle": "horizon_button_style",
+          "visibilityType": "in_game",
+          "clickEvents": [
+            {
+              "type": "key",
+              "key": "GLFW_KEY_T"
+            }
+          ],
+          "isSwipple": false,
+          "isPenetrable": false,
+          "isToggleable": false,
+          "opacity": 0.82
+        },
+        {
+          "text": {
+            "default": "TAB",
+            "matchQueue": []
+          },
+          "uuid": "641782f29a52",
+          "position": {
+            "x": 7220,
+            "y": 372
+          },
+          "buttonSize": {
+            "type": "percentage",
+            "widthDp": 50.0,
+            "heightDp": 50.0,
+            "widthPercentage": 1216,
+            "heightPercentage": 855,
+            "widthReference": "screen_height",
+            "heightReference": "screen_height"
+          },
+          "buttonStyle": "horizon_button_style",
+          "visibilityType": "in_game",
+          "clickEvents": [
+            {
+              "type": "key",
+              "key": "GLFW_KEY_TAB"
+            }
+          ],
+          "isSwipple": false,
+          "isPenetrable": false,
+          "isToggleable": false,
+          "opacity": 0.82
+        },
+        {
+          "text": {
+            "default": "MOUSE",
+            "matchQueue": []
+          },
+          "uuid": "ecb8c6513309",
+          "position": {
+            "x": 8570,
+            "y": 349
+          },
+          "buttonSize": {
+            "type": "percentage",
+            "widthDp": 50.0,
+            "heightDp": 50.0,
+            "widthPercentage": 1431,
+            "heightPercentage": 902,
+            "widthReference": "screen_height",
+            "heightReference": "screen_height"
+          },
+          "buttonStyle": "horizon_button_style",
+          "visibilityType": "always",
+          "clickEvents": [
+            {
+              "type": "launcher_event",
+              "key": "launcher.event.switch_mouse"
+            }
+          ],
+          "isSwipple": false,
+          "isPenetrable": false,
+          "isToggleable": false,
+          "opacity": 0.82
+        },
+        {
+          "text": {
+            "default": "BTN 15",
+            "matchQueue": []
+          },
+          "uuid": "1e0ea223ffb1",
+          "position": {
+            "x": 9251,
+            "y": 1781
+          },
+          "buttonSize": {
+            "type": "percentage",
+            "widthDp": 50.0,
+            "heightDp": 50.0,
+            "widthPercentage": 1666,
+            "heightPercentage": 1380,
+            "widthReference": "screen_height",
+            "heightReference": "screen_height"
+          },
+          "buttonStyle": "horizon_button_style",
+          "visibilityType": "in_game",
+          "clickEvents": [
+            {
+              "type": "key",
+              "key": "GLFW_KEY_F4"
+            }
+          ],
+          "isSwipple": false,
+          "isPenetrable": false,
+          "isToggleable": false,
+          "opacity": 0.65
+        },
+        {
+          "text": {
+            "default": "BTN 16",
+            "matchQueue": []
+          },
+          "uuid": "4c4eb0755440",
+          "position": {
+            "x": 9508,
+            "y": 3208
+          },
+          "buttonSize": {
+            "type": "percentage",
+            "widthDp": 50.0,
+            "heightDp": 50.0,
+            "widthPercentage": 1050,
+            "heightPercentage": 1335,
+            "widthReference": "screen_height",
+            "heightReference": "screen_height"
+          },
+          "buttonStyle": "horizon_button_style",
+          "visibilityType": "in_game",
+          "clickEvents": [
+            {
+              "type": "key",
+              "key": "GLFW_KEY_F3"
+            }
+          ],
+          "isSwipple": false,
+          "isPenetrable": false,
+          "isToggleable": false,
+          "opacity": 0.65
+        }
+      ]
+    },
+    {
+      "name": "move_joystick",
+      "uuid": "layer_move_joystick",
+      "hide": false,
+      "visibilityType": "always",
+      "joystickButtons": [
+        {
+          "uuid": "pe_bedrock_joystick",
+          "position": {
+            "x": 933,
+            "y": 7084
+          },
+          "sizeDp": 140.0,
+          "sizePercentage": 4375,
+          "joystickStyleId": "bedrock_joystick_style",
+          "deadZoneRatio": 0.15,
+          "lockThreshold": 0.85,
+          "lockEvents": [],
+          "visibilityType": "always"
+        }
+      ]
+    }
+  ],
+  "styles": [
+    {
+      "name": "Horizon Style",
+      "uuid": "horizon_button_style",
+      "animateSwap": false,
+      "lightStyle": {
+        "alpha": 1.0,
+        "pressedAlpha": 1.0,
+        "backgroundColor": 4280163118,
+        "pressedBackgroundColor": 4282529397,
+        "contentColor": 4294967295,
+        "pressedContentColor": 4294967295,
+        "borderWidth": 2,
+        "pressedBorderWidth": 2,
+        "borderColor": 4287265510,
+        "pressedBorderColor": 4291869951,
+        "borderRadius": {
+          "topStart": 12.0,
+          "topEnd": 12.0,
+          "bottomEnd": 12.0,
+          "bottomStart": 12.0
+        },
+        "pressedBorderRadius": {
+          "topStart": 12.0,
+          "topEnd": 12.0,
+          "bottomEnd": 12.0,
+          "bottomStart": 12.0
+        }
+      },
+      "darkStyle": {
+        "alpha": 1.0,
+        "pressedAlpha": 1.0,
+        "backgroundColor": 4280163118,
+        "pressedBackgroundColor": 4282529397,
+        "contentColor": 4294967295,
+        "pressedContentColor": 4294967295,
+        "borderWidth": 2,
+        "pressedBorderWidth": 2,
+        "borderColor": 4287265510,
+        "pressedBorderColor": 4291869951,
+        "borderRadius": {
+          "topStart": 12.0,
+          "topEnd": 12.0,
+          "bottomEnd": 12.0,
+          "bottomStart": 12.0
+        },
+        "pressedBorderRadius": {
+          "topStart": 12.0,
+          "topEnd": 12.0,
+          "bottomEnd": 12.0,
+          "bottomStart": 12.0
+        }
+      }
+    }
+  ],
+  "joystickStyles": [
+    {
+      "name": "Bedrock Joystick",
+      "uuid": "bedrock_joystick_style",
+      "lightStyle": {
+        "alpha": 0.4,
+        "backgroundColor": 1713512994,
+        "joystickColor": 3431442568,
+        "joystickCanLockColor": 3429223526,
+        "joystickLockedColor": 3427010798,
+        "lockMarkColor": 4294967295,
+        "borderWidthRatio": 4,
+        "borderColor": 2571387972,
+        "backgroundShape": 50,
+        "joystickShape": 50,
+        "joystickSize": 0.5
+      },
+      "darkStyle": {
+        "alpha": 0.4,
+        "backgroundColor": 1713512994,
+        "joystickColor": 3431442568,
+        "joystickCanLockColor": 3429223526,
+        "joystickLockedColor": 3427010798,
+        "lockMarkColor": 4294967295,
+        "borderWidthRatio": 4,
+        "borderColor": 2571387972,
+        "backgroundShape": 50,
+        "joystickShape": 50,
+        "joystickSize": 0.5
+      }
+    }
+  ],
+  "editorVersion": 12
+}
