@@ -471,7 +471,7 @@ object AllSettings : SettingsRegistry() {
     /**
      * 全局默认控制布局文件名
      */
-    val controlLayout = stringSetting("controlLayout", "mojo_layout.json")
+    val controlLayout = stringSetting("controlLayout", "pocket_edition_layout.json")
 
     //Other
     /**

@@ -166,6 +166,15 @@ object ControlManager {
      * 检查并更新设置
      */
     private fun checkSettings() {
+        // One-time switch of existing installs from the Java HUD layout to the Pocket Edition (MCPE-style) layout.
+        val migrateMarker = File(PathManager.DIR_CONTROL_LAYOUTS, ".pocket_default_applied")
+        if (!migrateMarker.exists()) {
+            if (AllSettings.controlLayout.getValue() == "mojo_layout.json") {
+                AllSettings.controlLayout.save("pocket_edition_layout.json")
+            }
+            runCatching { migrateMarker.createNewFile() }
+        }
+
         val setting = AllSettings.controlLayout.getValue()
 
         val layout = _dataList.value.find { it.file.name == setting && it.isSupport }
