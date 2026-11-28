@@ -86,7 +86,8 @@ object ControlManager {
                 "mojo_layout.json",
                 "zalith_1_layout.json",
                 "zalith_2_layout.json",
-                "pocket_edition_layout.json"
+                "pocket_edition_layout.json",
+                "horizon_layout.json"
             )
 
             for (preset in defaultPresets) {
