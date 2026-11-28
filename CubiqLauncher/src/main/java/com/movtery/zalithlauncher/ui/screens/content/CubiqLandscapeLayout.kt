@@ -79,6 +79,7 @@ import com.movtery.zalithlauncher.ui.screens.content.minecraft.MinecraftNewsScre
 import com.movtery.zalithlauncher.ui.screens.content.minecraft.MinecraftProfileScreen
 import com.movtery.zalithlauncher.ui.screens.content.minecraft.MinecraftSkinsScreen
 import com.movtery.zalithlauncher.ui.screens.content.minecraft.MinecraftPatchNotesScreen
+import com.movtery.zalithlauncher.ui.screens.NestedNavKey
 import com.movtery.zalithlauncher.ui.theme.MinecraftFontFamily
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.movtery.zalithlauncher.game.versioninfo.MinecraftOfficialContentManager
@@ -119,12 +120,10 @@ fun LandscapeLauncherLayout(
     // 5: Mods
     // 6: Profile
     val activeLandscapeIndex = when {
-        selectedBottomNav == 0 -> 4 // News
         selectedBottomNav == 2 -> 5 // Mods
         selectedBottomNav == 3 -> 6 // Profile
         selectedBottomNav == 1 && activeTab == 0 -> 1 // Installations
         selectedBottomNav == 1 && activeTab == 1 -> 2 // Skins
-        selectedBottomNav == 1 && activeTab == 2 -> 3 // Patch Notes
         else -> 0 // Play
     }
 
@@ -229,22 +228,10 @@ fun LandscapeLauncherLayout(
                     isActive = activeLandscapeIndex == 2,
                     onClick = { onSelectTab(1, 1) }
                 )
-                LandscapeNavButton(
-                    label = "Patch Notes",
-                    iconRes = R.drawable.ic_mc_book_and_quill,
-                    isActive = activeLandscapeIndex == 3,
-                    onClick = { onSelectTab(1, 2) }
-                )
 
                 Spacer(modifier = Modifier.height(8.dp))
 
                 // Group 2: Community & Launcher Settings
-                LandscapeNavButton(
-                    label = "News",
-                    iconRes = R.drawable.ic_mc_pc_news,
-                    isActive = activeLandscapeIndex == 4,
-                    onClick = { onSelectTab(0, -1) }
-                )
                 LandscapeNavButton(
                     label = "Mods",
                     iconRes = R.drawable.ic_mc_pc_mods,
@@ -256,6 +243,12 @@ fun LandscapeLauncherLayout(
                     iconRes = R.drawable.ic_mc_pc_profile,
                     isActive = activeLandscapeIndex == 6,
                     onClick = { onSelectTab(3, -1) }
+                )
+                LandscapeNavButton(
+                    label = "Settings",
+                    iconRes = R.drawable.block_redstone,
+                    isActive = false,
+                    onClick = { backStackViewModel.mainScreen.navigateTo(NestedNavKey.Settings()) }
                 )
             }
         }
